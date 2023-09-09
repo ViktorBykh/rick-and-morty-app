@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - include:
+      file: /db/changelog/changes/create-rick-and-morty-schema.sql
+  - include:
+      file: /db/changelog/changes/creat-movie-character-table.sql
+  - include:
+      file: /db/changelog/changes/create-movie-character-seq.sql
+  - include:
+      file: /db/changelog/changes/add-external-id-external-column-to-movie-character-table.sql
