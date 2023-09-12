@@ -24,11 +24,11 @@ This project is an API that provides information about the characters in the ani
 ### Table of Contents
 * [**Technologies Used**](#technologies-used) 
 * [**Project Setup**](#project-setup)
-* [**API Endpoints**](#api-endpoints)
-* [**Data Synchronization**](#data-synchronization)
-* [**Swagger Documentation**](#swagger-documentation)
+* [**API Endpoints**](#api-endpoints-)
 * [**Testing**](#testing)
-* [**Docker**](#docker)
+* [**Data Synchronization**](#data-synchronization-)
+* [**Swagger Documentation**](#swagger-documentation-)
+* [**Docker**](#docker-)
 
 ## Technologies Used:
 * <img src="asserts/java.png" width="25"/> **Java**
