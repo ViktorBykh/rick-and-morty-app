@@ -49,7 +49,7 @@ This project is an API that provides information about the characters in the ani
 3. Configure your PostgreSQL database settings in the `application.properties` file.
 4. Build and run the project.
 
-## <img src="https://em-content.zobj.net/thumbs/160/apple/354/link_1f517.png" width="25"/> API Endpoints
+## API Endpoints <img src="https://em-content.zobj.net/thumbs/160/apple/354/link_1f517.png" width="25"/>
 ### 1. Random Character
 - **Endpoint**: `/movie-characters/random`
 - **Method**: GET
@@ -62,20 +62,20 @@ This project is an API that provides information about the characters in the ani
 - **Query Parameter**:
 `name` - The string to search for in character names.
 
-## <img src="https://em-content.zobj.net/source/openmoji/338/counterclockwise-arrows-button_1f504.png" width="25"/> Data Synchronization
+## Testing
+To run tests for the project, execute the following command:
+`mvn clean package`
+
+## Data Synchronization <img src="https://em-content.zobj.net/source/openmoji/338/counterclockwise-arrows-button_1f504.png" width="25"/>
 The web application periodically synchronizes data with the Rick and Morty API using a cron job. 
 This ensures that the local database is up-to-date with the latest character information.
 
-## <img src="asserts/swagger.png" width="25"/> Swagger Documentation
+## Swagger Documentation <img src="asserts/swagger.png" width="25"/>
 API requests are documented using Swagger. 
 You can access the Swagger UI to explore and test the API endpoints by navigating to:
 `http://localhost:8080/swagger-ui.html`
 
-## <img src="https://em-content.zobj.net/thumbs/160/apple/354/mechanical-arm_1f9be.png" width="25"/> Testing
-To run tests for the project, execute the following command:
-`mvn clean package`
-
-## <img src="asserts/docker.png" width="25"/> Docker
+## Docker <img src="asserts/docker.png" width="25"/>
 Docker support is available for this project. You can build a Docker image and run the application in a container.
 To use the Docker image, follow these steps:
 1. Open a terminal or command prompt on your local machine.
