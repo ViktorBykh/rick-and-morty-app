@@ -44,7 +44,7 @@ This project is an API that provides information about the characters in the ani
 
 ## Project Setup
 1. Clone the repository to your local machine:
-   `git clone https://github.com/ViktorBykh/rick-and-morty-api.git`
+   `git clone https://github.com/ViktorBykh/rick-and-morty-app.git`
 2. Open the project in your preferred IDE (e.g., IntelliJ IDEA).
 3. Configure your PostgreSQL database settings in the `application.properties` file.
 4. Build and run the project.
