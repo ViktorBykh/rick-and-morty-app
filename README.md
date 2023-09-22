@@ -47,8 +47,9 @@ This project is an API that provides information about the characters in the ani
 1. Clone the repository to your local machine:
    `git clone https://github.com/ViktorBykh/rick-and-morty-app.git`
 2. Open the project in your preferred IDE (e.g., IntelliJ IDEA).
-3. Configure your PostgreSQL database settings in the `application.properties` file.
-4. Build and run the project.
+3. Configure your PostgreSQL database settings in the file `application.properties` .
+4. Configure the file `.env.sample` -> make it `.env`
+6. Build and run the project.
 
 ## API Endpoints <img src="https://em-content.zobj.net/thumbs/160/apple/354/link_1f517.png" width="25"/>
 ### 1. Random Character
@@ -84,6 +85,7 @@ To use the Docker image, follow these steps:
 [Install Docker](https://docs.docker.com/get-docker/)
 2. Clone this repository: 
 `https://github.com/ViktorBykh/rick-and-morty-app.git`
+3. Run the command to build the package: `mvn clean package`
 3. Start the Docker container using Docker Compose:
 `docker-compose up`
 4. Access the program in a web browser / Postman:
