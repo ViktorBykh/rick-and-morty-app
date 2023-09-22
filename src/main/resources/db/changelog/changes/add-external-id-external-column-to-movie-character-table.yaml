@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-external-id-column-to-movie-character-table
+      author: postgres
+      changes:
+        - addColumn:
+            tableName: movie_character
+            columns:
+              - column:
+                  name: external_id
+                  type: BIGINT
+        - rollback:
+            - dropColumn:
+                tableName: movie_character
+                columns:
+                  - column:
+                      name: external_id

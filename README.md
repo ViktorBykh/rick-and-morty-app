@@ -1,4 +1,4 @@
-###### <h1 align="center"> ![Rick and Morty API](asserts/rick-and-morty.png) </h1>
+###### <h1 align="center"> ![Rick and Morty API](assets/rick-and-morty.png) </h1>
 ###### <h1 align="center"> Rick and Morty API </h1>
 
 <h6 align="right"> <details>
@@ -16,9 +16,9 @@ Who knows, who cares! It's all just noise drowning out the anguished cries of a 
 
 </details> </h6>
 
-This project is an API that provides information about the characters in the animated series "Rick & Morty." It offers two main functionalities:
+This project is an API that provides information about the characters in the animated series "Rick and Morty." It offers two main functionalities:
 
-1. **Random Character**: Retrieve a random character's information from the Rick & Morty universe.
+1. **Random Character**: Retrieve a random character's information from the Rick and Morty universe.
 2. **Character Search**: Search for characters whose names contain a specific string.
 
 ### Table of Contents
@@ -31,16 +31,17 @@ This project is an API that provides information about the characters in the ani
 * [**Docker**](#docker-)
 
 ## Technologies Used:
-* <img src="asserts/java.png" width="25"/> **Java**
-* <img src="asserts/tomcat.png" width="25"/> **Tomcat**
-* <img src="asserts/spring-boot.png" width="25"/> **Spring Boot**
-* <img src="asserts/hibernate.png" width="25"/> **Hibernate (Spring Data JPA)**
-* <img src="asserts/postgresql.png" width="25"/> **PostgreSQL**
-* <img src="asserts/lombok.png" width="25"/> **Lombok**
-* <img src="asserts/jetbrains-ide.png" width="25"/> **JetBrains IDE**
-* <img src="asserts/github.png" width="25"/>  **Git**
-* <img src="asserts/swagger.png" width="25"/>  **Swagger**
-* <img src="asserts/docker.png" width="25"/>  **Docker**
+* <img src="assets/java.png" width="25"/> **Java**
+* <img src="assets/tomcat.png" width="25"/> **Tomcat**
+* <img src="assets/mapstruct.png" width="25"/> **MapStruct**
+* <img src="assets/spring-boot.png" width="25"/> **Spring Boot**
+* <img src="assets/hibernate.png" width="25"/> **Hibernate (Spring Data JPA)**
+* <img src="assets/postgresql.png" width="25"/> **PostgreSQL**
+* <img src="assets/lombok.png" width="25"/> **Lombok**
+* <img src="assets/jetbrains-ide.png" width="25"/> **JetBrains IDE**
+* <img src="assets/github.png" width="25"/>  **Git**
+* <img src="assets/swagger.png" width="25"/>  **Swagger**
+* <img src="assets/docker.png" width="25"/>  **Docker**
 
 ## Project Setup
 1. Clone the repository to your local machine:
@@ -70,18 +71,24 @@ To run tests for the project, execute the following command:
 The web application periodically synchronizes data with the Rick and Morty API using a cron job. 
 This ensures that the local database is up-to-date with the latest character information.
 
-## Swagger Documentation <img src="asserts/swagger.png" width="25"/>
+## Swagger Documentation <img src="assets/swagger.png" width="25"/>
 API requests are documented using Swagger. 
 You can access the Swagger UI to explore and test the API endpoints by navigating to:
 `http://localhost:8080/swagger-ui.html`
 
-## Docker <img src="asserts/docker.png" width="25"/>
-Docker support is available for this project. You can build a Docker image and run the application in a container.
+## Docker <img src="assets/docker.png" width="25"/>
+Docker is supported for this project. You can build a Docker image and run the application in a container.
 To use the Docker image, follow these steps:
-1. Open a terminal or command prompt on your local machine.
-2. Pull the Docker image from Docker Hub using the following command:
-`docker pull viktorbykh/rick-and-morty-app`
-3. Run the Docker image using the following command:
-`docker run viktorbykh/rick-and-morty-app`
 
-This commands will download the pre-built Docker image for the Rick and Morty API from Docker Hub and run it.
+1. Ensure you have Docker installed or: 
+[Install Docker](https://docs.docker.com/get-docker/)
+2. Clone this repository: 
+`https://github.com/ViktorBykh/rick-and-morty-app.git`
+3. Start the Docker container using Docker Compose:
+`docker-compose up`
+4. Access the program in a web browser / Postman:
+`http://localhost:6868/`
+5. Access to the program for Swagger:
+`http://localhost:6868/swagger-ui.html`
+
+This commands will compose Docker image for the Rick and Morty API and run it.
