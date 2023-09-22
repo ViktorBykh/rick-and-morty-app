@@ -16,8 +16,6 @@ services:
       timeout: 5s
       retries: 5
   app:
-    depends_on:
-      - postgres
     image: viktorbykh/rick-and-morty-app
     build: .
     env_file: ./.env
